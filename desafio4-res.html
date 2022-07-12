@@ -7,7 +7,7 @@
     <title>desafio 4</title>
 </head>
 <body>
-    <div style="display: flex;">
+    <div style="display: flex;height: 400px;">
         <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
             <input id="login" placeholder="Login" onchange="preencherLogin(event)">
             <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
@@ -18,7 +18,17 @@
             <input id="search" placeholder="Escreva...">
             <button id="search-button">Pesquisar Filme</button>
         </div>
-        <div id="list-container" style="margin-left: 20px;">
+        
+    </div>
+    <div id="list-container" style="display:flex">
+        <div id="listCreate" style="display:flex; flex-direction: column;">
+            <input type="text" name="name" id="nameList" placeholder='Nome da Lista'>
+            <input type="text" name="description" id="description" placeholder="Descrição">
+            <button id="criarLista">Criar Lista</button>
+        </div>
+        <div id="createdList" style="width:250px; margin-left:15px">
+        </div>
+        <div id="currentList" style="display:flex; flex-direction: column;">
         </div>
     </div>
 
